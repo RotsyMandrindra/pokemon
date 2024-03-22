@@ -2,10 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 import data from "../app/utils/data/api";
-import { detail } from "../app/utils/types/pokemonData";
+import { PokemonDetail } from "../app/utils/types/pokemonData";
 
 function details({ id }: { id: string }) {
-    const [details, setDetails] = useState<detail>();
+    const [details, setDetails] = useState<PokemonDetail>();
 
     useEffect(() => {
         function updateData() {

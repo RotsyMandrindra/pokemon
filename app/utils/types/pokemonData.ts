@@ -1,9 +1,9 @@
-export type Pokemon = {
+export type PokemonData = {
     name: string;
     url:  string;
 }
 
-export type detail = {
+export type PokemonDetail = {
     sprites: { front_default: string};
     name: string;
     height: number;
