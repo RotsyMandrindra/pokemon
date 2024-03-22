@@ -1,13 +1,18 @@
-export type PokemonData = {
+export type Pokemon = {
     name: string;
     url:  string;
 }
 
-export type PokemonDetail = {
+export type detail = {
     sprites: { front_default: string};
     name: string;
     height: number;
     weight: number;
-    type: string;
+    types: Slot[];
     order: number
+}
+
+type Slot = {
+    slot: number;
+    type: { name: string, url: string};
 }

@@ -18,9 +18,19 @@ async function getPokemon(url) {
     }
 }
 
+async function getPokemonById(id) {
+    try {
+        const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+        return response.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 const data = {
     getAllPokemons,
     getPokemon,
+    getPokemonById,
 }
 
 export default data;
